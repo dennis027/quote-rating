@@ -92,7 +92,7 @@ You are set to go.
 
 ## Deployment
 
-Click [here](https://github.com/dennis027/quote-rating.git/) to go to the live site.<br>
+Click [here](dennis027.github.io/quote-rating/) to go to the live site.<br>
 
 ## Built With
 
