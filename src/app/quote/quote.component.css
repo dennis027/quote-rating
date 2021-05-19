@@ -1,0 +1,21 @@
+.card {
+  padding: 20px;
+}
+
+main {
+  margin: 10%;
+  margin-top: 0%;
+}
+
+.col-md-7 {
+  padding: 6%;
+  padding-top: 1%;
+}
+
+.author {
+  color: chocolate;
+}
+
+.container>h1 {
+  padding: 2%;
+}

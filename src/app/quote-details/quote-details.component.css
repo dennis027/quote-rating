@@ -1,0 +1,23 @@
+.btn-group {
+  margin-right: 3%;
+}
+
+button {
+  margin-right: 3%;
+}
+
+#datePosted {
+  padding-top: 2%;
+  font-size: 11pt;
+}
+
+.dayCount {
+  float: right;
+}
+
+.icon {
+  margin-right: 9%;
+}
+.details{
+    margin-top: 5%;
+}

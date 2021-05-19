@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  #home {
+    background-image: url('assets/images/me.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #overlay {
+    padding-bottom:1%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(205, 231, 231, 0.5);
+  }

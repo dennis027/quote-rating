@@ -1,0 +1,28 @@
+
+<main>
+  <div class="container">
+    <h1 class="text-center" style="color: chocolate;">My Quotes</h1>
+    <hr>
+    <div class="row">
+      <div class="col-md-7">
+        <div *ngFor='let quote of quotes; let i = index;' class="card shadow-lg p-3 mb-3 bg-body rounded">
+          <div id={{i}}>
+            <h5 *ngIf='quote.upvote !== getMax() || quote.upvote === 0'>{{ quote.quote }}.</h5>
+            <div *ngIf='quote.upvote === getMax() && quote.upvote > 0'>
+              <h5 appHighlight>{{ quote.quote }}</h5>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div><strong class="author">-- {{quote.author}}</strong></div>
+            <div style="color: navy; font-size: 10pt; padding-right: 5%;" (click)='toggleDetails(i)'>More...</div>
+          </div>
+          <app-quote-details [quote]='quote' (isDeleted)='deleteQuote($event,i)' *ngIf='quote.toggleContent'>
+          </app-quote-details>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+      </div>
+    </div>
+  </div>
+</main>
