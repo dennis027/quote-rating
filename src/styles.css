@@ -12,7 +12,7 @@ body {
   #overlay {
     padding-bottom:1%;
     position: relative;
-    top: 0;
-    bottom: 0;
+    top: 5;
+    bottom: 5;
     background-color: rgba(205, 231, 231, 0.5);
   }
