@@ -1,10 +1,15 @@
 
 <main>
   <div class="container">
-    <h1 class="text-center" style="color: chocolate;">My Quotes</h1>
+    <h1 class="text-center" style="color: blue;">QUOTES APP</h1>
     <hr>
+   
+      <P>This is a quotes app that will be web based that a user view favourite links and can be able to rate them whether inspirational or discouraging </P>
+      <p>It is also allowing users to be able to upload their own Quotes where they can also be rated</p>
+      <p>Enjoy</p>
+      
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-6">
         <div *ngFor='let quote of quotes; let i = index;' class="card shadow-lg p-3 mb-3 bg-body rounded">
           <div id={{i}}>
             <h5 *ngIf='quote.upvote !== getMax() || quote.upvote === 0'>{{ quote.quote }}.</h5>
@@ -13,14 +18,14 @@
             </div>
           </div>
           <div class="d-flex justify-content-between">
-            <div><strong class="author">-- {{quote.author}}</strong></div>
-            <div style="color: navy; font-size: 10pt; padding-right: 5%;" (click)='toggleDetails(i)'>More...</div>
+            <div><strong class="author">{{quote.author}}</strong></div>
+            <div style="color: brown; font-size: 10pt; padding-right: 5%;" (click)='toggleDetails(i)'>React"Spread love everywhere you go. Let no one ever come to you without leaving happier." </div>
           </div>
           <app-quote-details [quote]='quote' (isDeleted)='deleteQuote($event,i)' *ngIf='quote.toggleContent'>
           </app-quote-details>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-6">
         <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
       </div>
     </div>
